@@ -1,16 +1,20 @@
 *{
 	padding: 0;
 	margin: 0;
-	
+	box-sizing: border-box;
 }
 body{
+	width: 100%;
+	height: 100vh;
     font-size: 15px;
     line-height: 25px;
     font-family: sans-serif;
-    background:#E7E7E7
+    background:#E7E7E7;
+    box-sizing: border-box;
 }
 .container{
-
+    height: 1500px;
+    overflow: hidden;
 }
 .header{
     width: 100%;
@@ -77,14 +81,14 @@ nav ul li a{
 }
 .post-content{
     width: 100%;
-    height:1000px;
+    height:900px;
     margin-top: 20px;
     overflow: hidden;
 }
-/* ----------coll-1 section  css------------ */
+/* ----------right sidebar css------------ */
 .left_sidebar{
     width: 300px;
-    height: auto;
+    height: 800px;
     float: left;
     margin-left: 20px;
     overflow: hidden;
@@ -116,24 +120,23 @@ nav ul li a{
 
 /* ---------middle sidebar section  css------------ */
 .Middle_sidebar{
-    width: 650px;
+    width: 720px;
     height: 430px;
     float: left;
     margin-left: 30px;
-     box-shadow: 0px 5px 5px gray; 
-     background: white;
+    box-shadow: 0px 5px 5px gray; 
+    background: white;
 }
 
 .image_slider{
-    width: 635px;
+    width: 705px;
     height: 375px;
     margin-top: 7px;
     margin-left: 7px;
     overflow: hidden; 
 }
 .image_slider img{
-    float: left;
-    width: 635px;
+    width: 705px;
     height: 375px;
 }
 
@@ -184,6 +187,7 @@ nav ul li a{
     background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     overflow: hidden;
     color: white;
+    margin-top: 50px;
 }
 .footer_leftsite{
    width: 50%;
@@ -204,13 +208,13 @@ nav ul li a{
 
 
 
-/* mobile responsive */
+/* mobile responsive size max-width 419px*/
 
 @media screen and (max-width:419px){
 
 .header{
     width: 100%;
-    height: 170px;
+    height: 200px;
 }
 
 .logo img{
@@ -262,6 +266,7 @@ nav ul li a{
 .cm_Servies{
     width: 396px;
 }
+/*responsive for middle sidebar css codding*/
 .Middle_sidebar{
     width: 410px;
     margin-left: 5px;
@@ -275,4 +280,10 @@ nav ul li a{
 }
 
 }
+/*mobile resposnsive device size maximum 360px*/
 
+
+
+
+
+}
